@@ -3,47 +3,88 @@
   <head>
     <title>My Gaming Website</title>
     <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8">
+    <!--Code below allows for it to be read in different languages-->
+    <meta charset="UTF-8" />
+    <!--Code below allows to be viewed on a moblie device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
+
   <body>
     <section>
-      <h1>This website is designed to help you find the video games that you truly
-        love by typing in what you like about a game. It will then generate games that
-        you will find intresting to play!
+      <h1>
+        This website is designed to help you find the video games that you truly
+        love by typing in what you like about a game. It will then generate
+        games that you will find intresting to play!
       </h1>
-      <h2>Typing in the following will allow the generator to show you the large amount
-        of games that would most intrest you:
-          <ol>
-            <li>Adventure</li>
-            <li>Singleplayer</li>
-            <li>Multiplayer</li>
-            <li>RPG</li>
-            <li>MMORPG</li>
-            <li>Horror</li>
-          </ol>
+      <h2>
+        Typing in the following will allow the generator to show you the large
+        amount of games that would most intrest you:
+        <ul class="gameList">
+          <li>Adventure</li>
+          <li>Singleplayer</li>
+          <li>Multiplayer</li>
+          <li>RPG</li>
+          <li>MMORPG</li>
+          <li>Horror</li>
+        </ul>
       </h2>
       <script src="script.js"></script>
       <fieldset>
-      <legend>What type of games do you like to play?</legend>
-     <input type="text" name="gameDescription" placeholder="Description of game">
-     <button type="submit">Submit</button>
-     <label><input id="xbox" type="radio" name="xbox-playstation-PC" value="xbox"> Xbox</label>
-     <label><input id="playstation" type="radio" name="xbox-playstation-PC" value="playstation"> Playstation</label>
-     <label><input id="pc" type="radio" name="xbox-playstation-PC" value="pc"> PC</label>
+        <!--This line of code below is asking the use which console they play on-->
+        <legend>What type of games do you like to play?</legend>
+        <label
+          ><input
+            id="xbox"
+            type="radio"
+            name="xbox-playstation-PC"
+            value="xbox"
+          />
+          Xbox</label
+        >
+        <label
+          ><input
+            id="playstation"
+            type="radio"
+            name="xbox-playstation-PC"
+            value="playstation"
+          />
+          Playstation</label
+        >
+        <label
+          ><input id="pc" type="radio" name="xbox-playstation-PC" value="pc" />
+          PC</label
+        >
       </fieldset>
       <fieldset>
-        <input type="checkbox" id="adventure" name="gameType" value="adventure">
+        <!--This line of code below is creating a checkbox to allow the user to select what they want out of the game-->
+        <input
+          type="checkbox"
+          id="adventure"
+          name="gameType"
+          value="adventure"
+        />
         <label for="adventure">Adventure</label>
-        <input type="checkbox" id="singleplayer" name="gameType" value="singleplayer">
+        <input
+          type="checkbox"
+          id="singleplayer"
+          name="gameType"
+          value="singleplayer"
+        />
         <label for="singleplayer">Singleplayer</label>
-        <input type="checkbox" id="multiplayer" name="gameType" value="multiplayer">
+        <input
+          type="checkbox"
+          id="multiplayer"
+          name="gameType"
+          value="multiplayer"
+        />
         <label for="Multiplayer">Multiplayer</label>
-        <input type="checkbox" id="rpg" name="gameType" value="rpg">
+        <input type="checkbox" id="rpg" name="gameType" value="rpg" />
         <label for="rpg">RPG</label>
-        <input type="checkbox" id="mmorpg" name="gameType" value="mmorpg">
+        <input type="checkbox" id="mmorpg" name="gameType" value="mmorpg" />
         <label for="mmorpg">MMORPG</label>
-        <input type="checkbox" id="horror" name="gameType" value="horror">
+        <input type="checkbox" id="horror" name="gameType" value="horror" />
         <label for="horror">Horror</label>
+        <button type="submit">Submit</button>
       </fieldset>
     </section>
   </body>
